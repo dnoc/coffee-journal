@@ -2,6 +2,9 @@
 	import CoffeeForm from '$lib/components/coffee-form.svelte';
 	import Timeline from '$lib/components/timeline.svelte';
 	import type CoffeeLog from '$lib/types/coffee-log';
+	import Footer from '$lib/components/footer.svelte';
+
+	let footerOpen = false;
 
 	const fakeLogs: CoffeeLog[] = [
 		{
@@ -23,5 +26,6 @@
 <div class="flex flex-col items-center gap-8 h-screen">
 	<h2 class="text-xl">How's the coffee today?</h2>
 	<Timeline coffeeLogs={fakeLogs} />
-	<CoffeeForm />
+	<button on:click={() => (footerOpen = !footerOpen)}>Open Footer</button>
+	<Footer bind:open={footerOpen} />
 </div>
