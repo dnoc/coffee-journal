@@ -1,11 +1,9 @@
 <script lang="ts">
-	import CoffeeForm from '$lib/components/coffee-form.svelte';
 	import Timeline from '$lib/components/timeline.svelte';
 	import type CoffeeLog from '$lib/types/coffee-log';
 	import Footer from '$lib/components/footer.svelte';
 
 	let footerOpen = false;
-
 	const fakeLogs: CoffeeLog[] = [
 		{
 			name: 'Lorem Ipsum',

@@ -12,7 +12,9 @@
 	<ul>
 		<li><input type="checkbox" />Timeline navigation and display</li>
 		<li><input type="checkbox" />Nav and background styling</li>
-		<li><input type="checkbox" />Form as a footer</li>
+		<li><input type="checkbox" />Mobile nav buttons</li>
+		<li><input type="checkbox" />Form as a footer (mobile)</li>
+		<li><input type="checkbox" />Form as a modal or drawer (desktop)</li>
 		<li><input type="checkbox" />Form input styling</li>
 		<li><input type="checkbox" />Timeline animations</li>
 		<li><input type="checkbox" />Funky little animations everywhere</li>
