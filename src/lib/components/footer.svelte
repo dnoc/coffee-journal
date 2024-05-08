@@ -63,10 +63,12 @@
 		transition: transform 0.4s ease;
 		overflow: auto;
 		bottom: 0;
-		transform: translate(0, 100%);
+		right: 50%;
+		transform: translate(50%, 100%);
 		max-height: 60%;
+		max-width: 500px;
 	}
 	.drawer.open .panel {
-		transform: translate(0, 0);
+		transform: translate(50%, 0);
 	}
 </style>
