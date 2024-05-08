@@ -3,6 +3,7 @@
 	import Nav from '$lib/components/nav.svelte';
 </script>
 
-<Nav />
-
-<slot />
+<div class="text-amber-50 bg-yellow-900">
+	<Nav />
+	<slot />
+</div>

@@ -5,12 +5,12 @@
 </script>
 
 <div
-	class="block h-full w-full max-w-sm p-12 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100"
+	class="block h-full w-full max-w-sm p-12 bg-yellow-800 border border-gray-200 rounded-lg shadow hover:bg-yellow-700"
 >
-	<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+	<h5 class="mb-2 text-2xl font-bold tracking-tight text-amber-100">
 		{coffeeLog.name}
 	</h5>
-	<p class="font-normal text-gray-700 dark:text-gray-400">
+	<p class="font-normal text-amber-50">
 		{coffeeLog.description}
 	</p>
 </div>

@@ -33,7 +33,7 @@
 	<label for="notes">Notes</label>
 	<input class="border border-gray-300" type="text" id="notes" name="notes" />
 	<button
-		class="focus:outline-none text-white bg-yellow-900 hover:bg-yellow-700 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:focus:ring-yellow-900"
+		class="focus:outline-none text-white bg-yellow-700 hover:bg-yellow-700 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:focus:ring-yellow-900"
 		type="submit"
 	>
 		Submit

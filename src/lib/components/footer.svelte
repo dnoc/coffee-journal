@@ -21,7 +21,7 @@
 <aside class="drawer" class:open on:keydown={closeWithEscape} tabIndex={-1}>
 	<div class="overlay" on:click={() => (open = false)} on:keydown={closeWithEscape} tabIndex={-1} />
 
-	<div class="panel p-6 rounded-t-3xl bg-slate-400">
+	<div class="panel p-6 rounded-t-3xl bg-yellow-900">
 		<button on:click={() => (open = false)}>Close</button>
 		<CoffeeForm />
 	</div>
@@ -62,7 +62,7 @@
 		z-index: 3;
 		transition: transform 0.4s ease;
 		overflow: auto;
-		bottom: 50px;
+		bottom: 0;
 		transform: translate(0, 100%);
 		max-height: 60%;
 	}

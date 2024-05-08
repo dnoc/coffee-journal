@@ -20,5 +20,5 @@
 			clip-rule="evenodd"
 		/>
 	</svg>
-	<span class="sr-only">Icon description</span>
+	<span class="sr-only">Next post</span>
 </button>

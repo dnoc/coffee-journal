@@ -1,5 +1,6 @@
 <script lang="ts">
-	import ArrowButton from './arrow-button.svelte';
+	import LeftButton from './left-button.svelte';
+	import RightButton from './right-button.svelte';
 	import TimelineCard from './timeline-card.svelte';
 	import LipsumCard from './lipsum-card.svelte';
 	import type CoffeeLog from '../types/coffee-log';
@@ -21,7 +22,7 @@
 
 <div class="flex flex-row items-center w-full min-h-[60%]">
 	<div class="flex justify-center w-1/5">
-		<ArrowButton handleClick={left} />
+		<LeftButton handleClick={left} />
 	</div>
 	<div class="flex justify-center w-3/5">
 		{#if displayedLog}
@@ -31,6 +32,6 @@
 		{/if}
 	</div>
 	<div class="flex justify-center w-1/5">
-		<ArrowButton handleClick={right} />
+		<RightButton handleClick={right} />
 	</div>
 </div>
