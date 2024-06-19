@@ -1,5 +1,6 @@
 <script lang="ts">
 	import CoffeeForm from '$lib/components/coffee-form.svelte';
+	import CloseButton from './close-button.svelte';
 
 	export let open = false;
 	const preventScrolling = () => {
@@ -22,7 +23,9 @@
 	<div class="overlay" on:click={() => (open = false)} on:keydown={closeWithEscape} tabIndex={-1} />
 
 	<div class="panel p-6 rounded-t-3xl bg-yellow-900">
-		<button on:click={() => (open = false)}>Close</button>
+		<div class="flex justify-end">
+			<CloseButton close={() => (open = false)} />
+		</div>
 		<CoffeeForm />
 	</div>
 </aside>
