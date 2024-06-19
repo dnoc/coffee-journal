@@ -2,7 +2,6 @@
 	import LeftButton from './left-button.svelte';
 	import RightButton from './right-button.svelte';
 	import TimelineCard from './timeline-card.svelte';
-	import LipsumCard from './lipsum-card.svelte';
 	import type CoffeeLog from '../types/coffee-log';
 
 	export let coffeeLogs: CoffeeLog[] = [];
@@ -25,11 +24,7 @@
 		<LeftButton handleClick={left} />
 	</div>
 	<div class="flex justify-center w-3/5">
-		{#if displayedLog}
-			<TimelineCard coffeeLog={displayedLog} />
-		{:else}
-			<LipsumCard />
-		{/if}
+		<TimelineCard coffeeLog={displayedLog} />
 	</div>
 	<div class="flex justify-center w-1/5">
 		<RightButton handleClick={right} />

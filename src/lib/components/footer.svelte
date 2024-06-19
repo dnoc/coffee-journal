@@ -4,7 +4,7 @@
 	export let open = false;
 	const preventScrolling = () => {
 		const body = document.querySelector('body');
-		body.style.overflow = open ? 'hidden' : 'auto';
+		if (body) body.style.overflow = open ? 'hidden' : 'auto';
 	};
 
 	const closeWithEscape = (e: KeyboardEvent) => {
