@@ -1,42 +1,30 @@
 <script lang="ts">
 	import { slide } from 'svelte/transition';
+	import Input from './Input.svelte';
 	let detailsOpen = false;
 </script>
 
-<form class="flex flex-col">
-	<label for="name">What kind of coffee?</label>
-	<input class="border border-gray-300 mb-4" type="text" id="name" name="name" />
-	<label for="roaster">Roasted by</label>
-	<input class="border border-gray-300 mb-4" type="text" id="roaster" name="roaster" />
+<form class="flex flex-col space-y-2">
+	<Input label="What kind of coffee?" id="name" />
+	<Input label="Roasted by" id="roaster" />
 	<div class="flex justify-between p-4">
 		<p>Brew details</p>
+		<!-- TODO caret icon -->
 		<button type="button" on:click={() => (detailsOpen = !detailsOpen)}>
 			{detailsOpen ? 'Hide' : 'Show'}
 		</button>
 	</div>
 	{#if detailsOpen}
-		<div class="flex flex-col" transition:slide>
-			<label for="brew-method">Brew Method</label>
-			<input class="border border-gray-300 mb-4" type="text" id="brew-method" name="brew-method" />
-			<label for="grind-size">Grind Size</label>
-			<input class="border border-gray-300 mb-4" type="text" id="grind-size" name="grind-size" />
-			<label for="grinder-name">Grinder Name</label>
-			<input
-				class="border border-gray-300 mb-4"
-				type="text"
-				id="grinder-name"
-				name="grinder-name"
-			/>
-			<label for="steep-time">Steep Time</label>
-			<input class="border border-gray-300 mb-4" type="text" id="steep-time" name="steep-time" />
-			<label for="description">Description</label>
-			<input class="border border-gray-300 mb-4" type="text" id="description" name="description" />
+		<div class="flex flex-col space-y-2" transition:slide>
+			<Input label="Brew Method" id="brew-method" />
+			<Input label="Grind Size" id="grind-size" />
+			<Input label="Grinder Name" id="grinder-name" />
+			<Input label="Steep Time" id="steep-time" />
+			<Input label="Description" id="description" />
 		</div>
 	{/if}
-	<label for="rating">Rating</label>
-	<input class="border border-gray-300 mb-4" type="number" id="rating" name="rating" />
-	<label for="notes">Notes</label>
-	<input class="border border-gray-300 mb-4" type="text" id="notes" name="notes" />
+	<Input label="Rating" id="rating" type="number" />
+	<Input label="Notes" id="notes" />
 	<button
 		class="text-amber-50 bg-yellow-800 hover:bg-yellow-700 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5"
 		type="submit"

@@ -24,6 +24,7 @@
 		<LeftButton handleClick={left} />
 	</div>
 	<div class="flex justify-center w-3/5">
+		<!-- TODO apply css animation fly x left or right, y down, rotate 15deg, opacity to 0 -->
 		<TimelineCard coffeeLog={displayedLog} />
 	</div>
 	<div class="flex justify-center w-1/5">
