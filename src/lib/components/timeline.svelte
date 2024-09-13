@@ -23,10 +23,11 @@
 	<div class="flex justify-center w-1/5">
 		<LeftButton handleClick={emblaApi?.scrollPrev} />
 	</div>
-	<div class="embla" use:emblaCarouselSvelte={emblaConfig} on:emblaInit={onInit}>
-		<div class="embla__container">
+	<!-- Todo mobile alignment is messed up and buttons should move down screen on mobile -->
+	<div class="embla flex w-3/5" use:emblaCarouselSvelte={emblaConfig} on:emblaInit={onInit}>
+		<div class="embla__container flex">
 			{#each coffeeLogs as log}
-				<div class="embla__slide flex justify-center w-3/5">
+				<div class="embla__slide flex justify-center min-w-0">
 					<TimelineCard coffeeLog={log} />
 				</div>
 			{/each}
@@ -41,11 +42,7 @@
 	.embla {
 		overflow: hidden;
 	}
-	.embla__container {
-		display: flex;
-	}
 	.embla__slide {
 		flex: 0 0 100%;
-		min-width: 0;
 	}
 </style>
