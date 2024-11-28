@@ -4,7 +4,7 @@
 	let detailsOpen = false;
 </script>
 
-<form class="flex flex-col space-y-2">
+<form class="flex flex-col space-y-2" method="POST">
 	<Input label="What kind of coffee?" id="name" />
 	<Input label="Roasted by" id="roaster" />
 	<div class="flex justify-between p-4">

@@ -10,18 +10,17 @@
 	</ul>
 	<p>There's always more TODO:</p>
 	<ul>
-		<li><input type="checkbox" />Timeline navigation and display</li>
-		<li><input type="checkbox" />Nav and background styling</li>
-		<li><input type="checkbox" />Mobile nav buttons</li>
-		<li><input type="checkbox" />Form as a footer (mobile)</li>
-		<li><input type="checkbox" />Form as a modal or drawer (desktop)</li>
-		<li><input type="checkbox" />Form input styling</li>
-		<li><input type="checkbox" />Timeline animations</li>
-		<li><input type="checkbox" />Funky little animations everywhere</li>
-		<li><input type="checkbox" />Downloadable as a PWA</li>
-		<li><input type="checkbox" />Form saves log somewhere</li>
-		<li><input type="checkbox" />Timeline actually displays saved logs from the user</li>
-		<li><input type="checkbox" />Calendar view</li>
-		<li><input type="checkbox" />Profile, display and editable</li>
+		<li><input type="checkbox" checked /> Timeline navigation and display</li>
+		<li><input type="checkbox" checked /> Nav and background styling</li>
+		<li><input type="checkbox" /> Mobile nav buttons</li>
+		<li><input type="checkbox" checked /> Form as a drawer</li>
+		<li><input type="checkbox" /> Form input styling</li>
+		<li><input type="checkbox" checked /> Timeline animations</li>
+		<li><input type="checkbox" /> Funky little animations everywhere</li>
+		<li><input type="checkbox" checked /> Downloadable as a PWA</li>
+		<li><input type="checkbox" /> Form saves log somewhere</li>
+		<li><input type="checkbox" /> Timeline actually displays saved logs from the user</li>
+		<li><input type="checkbox" /> Calendar view</li>
+		<li><input type="checkbox" /> Profile, display and editable</li>
 	</ul>
 </div>
