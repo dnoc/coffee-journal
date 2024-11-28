@@ -5,7 +5,7 @@
 <button
 	type="button"
 	on:click={handleClick}
-	class="text-amber-50 rotate-180 bg-yellow-900 hover:bg-yellow-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full p-2.5 inline-flex items-center mr-2"
+	class="text-amber-50 rotate-180 bg-yellow-800 hover:bg-yellow-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full p-2.5 inline-flex items-center mr-2"
 >
 	<svg
 		aria-hidden="true"

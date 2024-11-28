@@ -23,10 +23,16 @@
 </script>
 
 <div class="flex flex-col items-center gap-8 h-screen">
-	<h2 class="text-xl">How's the coffee today?</h2>
+	<h2 class="text-xl pt-2">How's the coffee today?</h2>
 	<Timeline coffeeLogs={fakeLogs} />
-	<div>
+	<div class="fixed bottom">
 		<DraftButton handleClick={() => (footerOpen = !footerOpen)} />
 	</div>
 	<Footer bind:open={footerOpen} />
 </div>
+
+<style>
+	.bottom {
+		bottom: 16%;
+	}
+</style>

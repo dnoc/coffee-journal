@@ -19,12 +19,8 @@
 	}
 </script>
 
-<div class="flex flex-row items-center w-full min-h-[60%]">
-	<div class="flex justify-center w-1/5">
-		<LeftButton handleClick={emblaApi?.scrollPrev} />
-	</div>
-	<!-- Todo mobile alignment is messed up and buttons should move down screen on mobile -->
-	<div class="embla flex w-3/5" use:emblaCarouselSvelte={emblaConfig} on:emblaInit={onInit}>
+<div class="flex flex-row items-center w-full min-h-[60%] px-4 sm:px-0">
+	<div class="embla w-full" use:emblaCarouselSvelte={emblaConfig} on:emblaInit={onInit}>
 		<div class="embla__container flex">
 			{#each coffeeLogs as log}
 				<div class="embla__slide flex justify-center min-w-0">
@@ -33,9 +29,12 @@
 			{/each}
 		</div>
 	</div>
-	<div class="flex justify-center w-1/5">
-		<RightButton handleClick={emblaApi?.scrollNext} />
-	</div>
+</div>
+<div class="fixed buttons-bottom md:left-20 left-1/4">
+	<LeftButton handleClick={emblaApi?.scrollPrev} />
+</div>
+<div class="fixed buttons-bottom md:right-20 right-1/4">
+	<RightButton handleClick={emblaApi?.scrollNext} />
 </div>
 
 <style>
@@ -44,5 +43,15 @@
 	}
 	.embla__slide {
 		flex: 0 0 100%;
+	}
+
+	.buttons-bottom {
+		bottom: 16%;
+	}
+
+	@media (min-width: 768px) {
+		.buttons-bottom {
+			bottom: 50%;
+		}
 	}
 </style>
