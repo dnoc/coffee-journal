@@ -20,11 +20,10 @@
 			<Input label="Grind Size" id="grind-size" />
 			<Input label="Grinder Name" id="grinder-name" />
 			<Input label="Steep Time" id="steep-time" />
-			<Input label="Description" id="description" />
 		</div>
 	{/if}
 	<Input label="Rating" id="rating" type="number" />
-	<Input label="Notes" id="notes" />
+	<Input label="Description" id="description" />
 	<button
 		class="text-amber-50 bg-yellow-800 hover:bg-yellow-700 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5"
 		type="submit"
