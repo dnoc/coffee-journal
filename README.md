@@ -1,4 +1,22 @@
-# create-svelte
+# Coffee Journal
+
+This is a little side project webapp that I started to learn a few new things and get experience outside my day-to-day work.
+I wanted to learn how to use SvelteKit, how to create a progressive webapp, how to use Github Copilot, how to use TailwindCSS, get more practice with css animations, and how to use a different backend than I'm used to (currently wip Supabase).
+
+- [x] Timeline navigation and display
+- [x]  Nav and background styling
+- [ ] Mobile nav buttons
+- [x] Form as a drawer
+- [ ] Form input styling
+- [x] Timeline animations
+- [ ] Funky little animations everywhere
+- [x] Downloadable as a PWA
+- [ ] Form saves log to a backend
+- [ ] Timeline actually displays saved logs from the user
+- [ ] Calendar view
+- [ ] Profile, display and editable
+
+## create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
